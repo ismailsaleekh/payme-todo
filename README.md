@@ -1,27 +1,58 @@
-# TodoApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
+# Angular 18 To-Do Application
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project is a To-Do application built using Angular 18 with standalone components and services. It includes functionality for user authentication, creating, viewing, editing, and deleting To-Do items, as well as error handling and loading indicators.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- User authentication (login/logout)
+- Create, view, edit, and delete To-Do items
+- Error handling with retry and dismiss options
+- Loading indicators for HTTP requests
+- Dynamic sorting and pagination for To-Do items
+- Responsive design
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular 18
+- RxJS
+- Angular Router
+- Angular Forms
+- SCSS for styling
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation
 
-## Running end-to-end tests
+1. Clone the repository:
+    ```bash
+    git clone
+    ```
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Running the Application
 
-## Further help
+1. Start the development server:
+    ```bash
+    ng serve
+    ```
+2. Open your browser and navigate to `http://localhost:4200`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Running Tests
+
+1. Run unit tests:
+    ```bash
+    ng test
+    ```
+
+## Deployment
+
+1. Build the project:
+    ```bash
+    ng build
+    ```
+2. The build artifacts will be stored in the `dist/` directory. Deploy the contents of this directory to your preferred web server.
