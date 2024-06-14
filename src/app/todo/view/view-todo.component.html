@@ -1,0 +1,12 @@
+<div class="todo-view-container" *ngIf="todo">
+    <button class="back-button" (click)="goBack()">Back</button>
+    <h2>{{ todo.title }}</h2>
+    <div class="todo-status" [class.completed]="todo.completed" [class.incomplete]="!todo.completed">
+        {{ todo.completed ? 'Completed' : 'Incomplete' }}
+    </div>
+    <div class="todo-dates">
+        <p>Created at: {{ todo.created_at | date: 'short' }}</p>
+        <p>Updated at: {{ todo.updated_at | date: 'short' }}</p>
+    </div>
+</div>
+<div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
